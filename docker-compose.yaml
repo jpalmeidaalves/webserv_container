@@ -1,0 +1,10 @@
+services:
+    webserv:
+        container_name: webserv
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image:          webserv_img
+        ports:
+            - "8084:8084"
+        
